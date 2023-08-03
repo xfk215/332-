@@ -10,10 +10,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url(12.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
         }
 
 
