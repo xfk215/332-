@@ -1,7 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学生信息表</title>
+    <style type="text/css">
+        table, td, th {
+            border: 1px solid green;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            background-color: green;
+            color:white;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
 <?php
 
 // 连接数据库
-$conn = mysqli_connect("localhost", "root", "123456", "mysql","3304");
+$conn = mysqli_connect("localhost", "root", "456789", "dome","3306");
 
 // 接收表单数据
 $name = $_POST["name"];
@@ -12,7 +33,7 @@ $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // 查询到数据，输出表格
-    echo "<table border='1'>";
+    echo "<table>";
     echo "<tr><th>ID</th><th>姓名</th><th>年龄</th><th>性别</th><th>专业</th></tr>";
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
@@ -33,3 +54,5 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($conn);
 
 ?>
+</body>
+</html>
