@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>332猛男宿舍</title>
+    <link rel="icon" type="image/png" href="20号楼.png">
+
     <style>
         body {
             display: flex;
@@ -12,6 +14,7 @@
             background-image: url(123.jpg);
             background-size: cover;
             background-position: center;
+            background-attachment: scroll;
         }
 
         h1, h2, form {
@@ -21,22 +24,32 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
-        th, td {
+        
+        /*table, th, td {
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
         th {
             background-color: #f2f2f2;
-        }
-        a {
-            color: #0e84b5;
-        }
+            height: 50px;
+        }*/
+
+        a:link {color:#000000;}      /* 未访问链接*/
+        a:visited {color:#0e84b5;}  /* 已访问链接 */
+        a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+        a:active {color:#00FF00;}  /* 鼠标点击时 */
     </style>
 </head>
 <body>
 <h1>
-    <a href="http://jwc.zua.edu.cn/">学生信息管理系统</a>
+    <a href="http://jwc.zua.edu.cn/" target="_blank" style="text-decoration:none;"> <abbr title="点击进入教务处" style="text-decoration:none;">学生信息管理系统</abbr></a>
 </h1>
 
 <h2>添加学生信息</h2>
