@@ -1,6 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>所有学生信息表</title>
+    <style type="text/css">
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(12.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+
+
+        table,td,th{
+            border:1px solid green;
+            text-align:center;
+        }
+        table{
+            width:50%;
+        }
+        th{
+            background-color:green;
+            color:white;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
 <?php
 // 连接数据库
-$conn = mysqli_connect("localhost", "root", "123456", "mysql", "3304");
+$conn = mysqli_connect("localhost", "root", "456789", "dome", "3306");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -18,3 +52,5 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+</body>
+</html>
